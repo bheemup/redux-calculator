@@ -16,6 +16,7 @@ import { DECREMENT, INCREMENT,
       return {...state}};
 
     case ADD_VALUE :{
+   action.payload = +(action.payload)
       state.count+=action.payload;
       return {...state}
     };
